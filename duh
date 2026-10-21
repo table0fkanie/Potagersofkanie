@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../Assets/script/script.js"></script>
+</head>
+<body>
+    <input type="button" onclick="disp_alert()" value="alert">
+    <br>
+    <input type="button" onclick="disp_confirm()" value="confirm">
+    <br>
+    <input type="button" onclick="disp_prompt()" value="prompt">
+    <br>
+    <input type="button" onclick="pushData()" value="enque">
+    <br>
+    <input type="button" onclick="shiftData()" value="deque">
+    <br>
+    <input type="button" onclick="popData()" value="hapus data belakang">
+    <br>
+     <input type="button" onclick="unshiftData()" value="Masuk data">
+    <br>
+     <input type="button" onclick="concatData()" value="Mix data">
+    <br>
+     <input type="button" onclick="indexData()" value="Index dari bandung">
+    <br>
+    <input type="button" onclick="reverseData()" value="Reverse">
+    <br>
+<p id="intro">
+   <h1>Hello world</h1>
+</p>
+
+<p>Contoh <b>getelementByid</b>method!</p>
+<p id="demo"></p>
+
+<!-- <script>
+    myelement=document.getElementById("Intro")
+    document.getElementById("Demo").innerHTML="Teks dari halaman intro adalah"+
+    myelement.innerHTML
+</script> -->
+
+</body>
+</html>
+
+  function disp_alert (){
+            alert("Haii aku kanieyy")
+        }
+
+  function disp_confirm (){
+            confirm("Apa iyaa?")
+        }
+
+  function disp_prompt (){
+    var name=prompt("mskn nma anda")
+    if (name!=null && name!=" ") {
+        document.write("Haloo "+ name + ", Hari yang gelap yh.")
+        
+    }
+     prompt("")
+ }
+
+//number(free use!)
+//String(utk semua jenis karakter tanpa pengoperasian)
+
+function pushData(){
+    var kota=["Cianjur","Bandung ","Depok"]
+    document.write(kota)
+    document.write("<br>")
+    kota.push("Pandeglang")
+    document.write(kota)
+}
+function popData(){
+    var kota=["Cianjur","Bandung ","Depok"]
+    document.write(kota)
+    document.write("<br>")
+    kota.pop()
+    document.write(kota)
+}
+
+function unshiftData(){
+    var kota=["Cianjur","Bandung ","Depok"]
+    document.write(kota)
+    document.write("<br>")
+    kota.unshift("Jakarta")
+    document.write(kota)
+}
+
+function shiftData(){
+    var kota=["Cianjur","Bandung ","Depok"]
+    document.write(kota)
+    document.write("<br>")
+    kota.shift()
+    document.write(kota)
+}
+
+function concatData(){
+    var kota=["Cianjur","Bandung ","Depok"]
+    var buah=["Durian","Rambutan","Anggur muscat"]
+    document.write(kota)
+    document.write(buah)
+    var mix=kota.concat(buah)
+    document.write("<br>")
+    document.write(mix)
+}
+
+function indexData(){
+    var kota=["Cianjur","Bandung ","Depok"]
+    document.write(kota.indexOf("Bandung"))
+}
+function reverseData(){
+    //0    1   2   
+    var kota=["Cianjur","Bandung ","Depok"]
+    document.write(kota)
+     document.write("<br>")
+    kota.reverse()
+    document.write(kota)
+}
+
+
+// myelement=document.getElementById("Intro")
+// document.getElementById("Demo").innerHTML="Teks dari halaman intro adalah"+
+// myelement.innerHTML
+
+console.log('hello wrold ')
+var nama='Kadip'
+console.log('hello '+nama)
+
+let ang1=7
+let ang2=4
+let p=3.14
+const hasil= 2*(p*ang1)*(ang1+ang2)
+console.log("Hasilnya adalah "+ hasil)
+
+  
